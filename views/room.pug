@@ -1,0 +1,8 @@
+extend layout
+block nav
+  h1 Pick a room
+block content
+  ul
+    each room in rooms
+      li
+        a(href='/room/'+room.link)=room.name

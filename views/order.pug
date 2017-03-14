@@ -1,0 +1,30 @@
+extend layout
+block side-nav
+  .spectrum
+  h3 ROOMS
+  each room in rooms
+    if room.link == roomLink
+      a(href='/room/'+room.link, class='selected')=room.name
+    else
+      a(href='/room/'+room.link, class=room.link)=room.name
+  .reportBug
+    i(class='fa fa-bug')
+    a(href='mailto:tony.susi@fcb.com?subject=Coffee%20App%3A%20Bug') Report a bug
+block nav
+  .menu(id='side-nav-button')
+    i(class='fa fa-bars fa-lg')
+  .title
+    h1 #{title}
+block content
+  div#listToggle
+    #drinksTab(class='active tab')   
+      i(class='fa fa-coffee fa-lg')
+      p='Drinks'
+    #listTab(class='tab')
+      i(class='fa fa-list fa-lg')
+      p='List'
+  #drinkList
+    ul
+  #newOrder
+  button.addMessage add message
+  button.done place order

@@ -1,0 +1,926 @@
+/******************************************************************
+COFFEE THEME - https://color.adobe.com/Coffee-color-theme-1492952/edit/?copy=true
+******************************************************************/
+
+/*
+#00010D - black
+#301E1C - dark brown
+#916345 - brown
+#EDBA8A -light brown
+#F2F2F2 - white
+*/
+
+
+
+/******************************************************************
+FONT FACE
+******************************************************************/
+
+
+
+
+/******************************************************************
+GENERAL LAYOUT STYLES
+******************************************************************/
+
+html {
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	hyphens: none;
+  font-size: 62.5%;
+}
+
+body {
+	background-color: #fcfcfc;
+	background-repeat: no-repeat;
+	background-position: center top;
+	color: #5c5c5c;
+	background-attachment: fixed;
+/*    font-family: 'Josefin Sans', sans-serif;*/
+  font-family:'Rockwell W02';
+
+  /*    font-family: 'Cabin', sans-serif;*/
+/*font-family: 'Economica', sans-serif;*/
+    font-weight: 400;
+	line-height: 16px;
+    font-size: 14px; 
+    font-size: 1.4rem;
+	padding: 0;
+	margin: 0px;
+
+} 
+
+a {
+	text-decoration: none;
+	color:#000000;
+}
+
+.btn, button {
+	display: inline-block;
+	margin-bottom: 0px;
+	font-weight: normal;
+	text-align: center;
+	vertical-align: middle;
+	cursor: pointer;
+	background-image: none;
+	border: 1px solid transparent;
+	white-space: nowrap;
+	padding: 6px 10px 4px 6px;
+	font-size: 11px;
+    font-size: 1.1rem;
+	line-height: 1.42857143;
+	border-radius: 4px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: #FFF;border-radius:0px;
+}
+
+ button {
+	font-size: 1.5rem;
+    font-size: 15px !important;
+	padding: 8px 15px 6px !important;
+	background-color: #555;
+    font-family: 'Code Pro W01 Lowercase';
+	text-transform: uppercase;
+/*	font-family: 'Economica', sans-serif;*/
+	font-weight: 400;
+	margin-top: 30px;
+    -webkit-transition: all 0.3s ease-out;
+     -moz-transition: all 0.3s ease-out;
+       -o-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; 
+}
+
+button.drink{
+  background-color: #4d394b;
+}
+
+button.done{
+  background-color: #555;
+  width: 90%;
+  margin: 0 5% 25px;border-radius: 0;
+}
+
+
+button.addMessage{
+  width: 90%;
+  margin: 0 5% 20px;
+  border-radius: 0;
+  color:#000;
+  border:1px solid #CCC;
+  text-align: center;
+  display: inline-block;
+  cursor: pointer;
+  background-color: #eee;
+  background-image:
+    linear-gradient(
+      to bottom, 
+      #FFF, #DDD
+    );
+  
+  
+}
+
+button.done:hover,
+button:hover{
+	background-color: #191919;
+}
+
+#container {
+	min-width: 300px;
+	margin:auto;
+	display: block;
+}
+
+ul.list {
+	margin: 0;
+	padding: 34px 0 0;
+}
+
+ul.list li {
+	padding: 15px 20px 15px 0px;
+	list-style-type: none;
+	border-top:2px solid #FFF;
+	border-bottom:1px solid #DDD;
+	display: block;
+	margin: 0 auto;
+	width: auto;
+}
+header{
+	padding:0;
+	margin:0;
+    color:#FFF;
+    background-color: #000;
+}
+
+/*
+colArr =[
+	'#343b8a',rgba(52, 59, 138, 1)
+	'#124c8b',rgba(18, 76, 139, 1)
+	'#147551',rgba(20, 117, 81, 1)
+	'#b0472f',rgba(176, 71, 47, 1)
+	'#e23a22',rgba(226, 58, 34, 1)
+	'#fdb615',rgba(253, 182, 21, 1)
+	'#e74522',rgba(231, 69, 34, 1)
+	'#c34437',rgba(195, 68, 55, 1)
+	'#eb1563',rgba(235, 21, 99, 1)
+	'#ef2785',rgba(239, 39, 133, 1)
+	'#e91c26',rgba(233, 28, 38, 1)
+	'#3a358a',rgba(58, 53, 138, 1)
+];
+*/
+
+h1, h2, h3, h4{
+  font-family: 'Code Pro W01 Lowercase';
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+/*a.cr1,*/
+header.cr1,
+.kitchen .cr1,
+.cr1 .num,
+.cr1 .options,
+.cr1 .side-nav a:hover {
+/*  background: url(/img/rooms.png) 0px 0px;*/
+  background-color:#343b8a;
+}
+
+/*a.cr2,*/
+header.cr2,
+.kitchen .cr2,
+.cr2 .num,
+.cr2 .options,
+.cr2 .side-nav a:hover{
+/*  background: url(/img/rooms.png)  0px -100px;*/
+  background-color: #124c8b;
+}
+/*a.cr3,*/
+header.cr3,
+.kitchen .cr3,
+.cr3 .num,
+.cr3 .options,
+.cr3 .side-nav a:hover{
+/*  background: url(/img/rooms.png) 0px -200px;*/
+    background-color: #147551;
+}
+/*a.the-lounge,*/
+header.the-lounge,
+.kitchen .the-lounge,
+.the-lounge .num,
+.the-lounge .options,
+.the-lounge .side-nav a:hover{
+/*  background: url(/img/rooms.png) 0px -300px;*/
+    background-color: #b0472f;
+}
+/*a.cr5,*/
+header.cr5,
+.kitchen .cr5,
+.cr5 .num,
+.cr5 .options,
+.cr5 .side-nav a:hover{
+/*  background: url(/img/rooms.png) 0px -400px;*/
+    background-color: #e23a22;
+}
+/*a.cr6,*/
+header.cr6,
+.kitchen .cr6,
+.cr6 .num,
+.cr6 .options,
+.cr6 .side-nav a:hover{
+/*  background: url(/img/rooms.png) 0px -500px;*/
+    background-color: #fdb615;
+}
+/*a.brick-main,*/
+header.brick-main,
+.kitchen .brick-main,
+.brick-main .num,
+.brick-main .options,
+.brick-main .side-nav a:hover{
+/*  background: url(/img/rooms.png) 0px -600px;*/
+    background-color: #e74522;
+}
+/*a.brick-boardroom,*/
+header.brick-boardroom,
+.kitchen .brick-boardroom,
+.brick-boardroom .num,
+.brick-boardroom .options,
+.brick-boardroom .side-nav a:hover{
+/*  background: url(/img/rooms.png) 0px -700px;*/
+    background-color: #c34437;
+}
+
+.side-nav a.selected,
+.cr1 .side-nav a.selected:hover,
+.cr2 .side-nav a.selected:hover,
+.cr3 .side-nav a.selected:hover,
+.the-lounge .side-nav a.selected:hover,
+.cr5 .side-nav a.selected:hover,
+.cr6 .side-nav a.selected:hover,
+.brick-main .side-nav a.selected:hover,
+.brick-boardroom .side-nav a.selected:hover{
+  background-color: #FFF;
+  color:#555;
+}
+
+.cr1 #drinkList li.message{
+	background-color: rgba(52, 59, 138, .15) !important;
+}
+
+.cr2 #drinkList li.message{
+	background-color: rgba(18, 76, 139, .15) !important;
+}
+
+.cr3 #drinkList li.message{
+	background-color: rgba(20, 117, 81, .15) !important;
+}
+
+.the-lounge #drinkList li.message{
+	background-color: rgba(176, 71, 47, .15) !important;
+}
+.cr5 #drinkList li.message{
+	background-color: rgba(226, 58, 34, .15) !important;
+}
+
+.cr6 #drinkList li.message{
+	background-color: rgba(253, 182, 21, .15) !important;
+}
+
+.brick-main #drinkList li.message{
+	background-color: rgba(231, 69, 34, .15) !important;
+}
+
+.brick-boardroom #drinkList li.message{
+	background-color: rgba(231, 69, 34, .15) !important;
+}
+
+/* drink person*/
+.cr1 #drinkList ul li span.drinkPerson,
+.cr1 #drinkList ul li input.personTxt{
+	color: rgb(52, 59, 138) !important;
+}
+
+.cr2 #drinkList ul li span.drinkPerson,
+.cr2 #drinkList ul li input.personTxt{
+	color: rgb(18, 76, 139) !important;
+}
+
+.cr3 #drinkList ul li span.drinkPerson,
+.cr3 #drinkList ul li input.personTxt{
+	color: rgb(20, 117, 81) !important;
+}
+
+.the-lounge #drinkList ul li span.drinkPerson,
+.the-lounge #drinkList ul li input.personTxt{
+	color: rgb(176, 71, 47) !important;
+}
+.cr5 #drinkList ul li span.drinkPerson,
+.cr5 #drinkList ul li input.personTxt{
+	color: rgb(226, 58, 34) !important;
+}
+.cr6 #drinkList ul li span.drinkPerson,
+.cr6 #drinkList ul li input.personTxt{
+	color: rgb(253, 182, 21) !important;
+}
+.brick-main #drinkList ul li span.drinkPerson,
+.brick-main #drinkList ul li input.personTxt{
+	color: rgb(231, 69, 34) !important;
+}
+.brick-boardroom #drinkList ul li span.drinkPerson,
+.brick-boardroom #drinkList ul li input.personTxt{
+	color: rgb(231, 69, 34) !important;
+}
+
+#drinkList ul li span.drinkPerson{
+	margin-left: 5px;
+}
+
+#drinkList ul li input.personTxt{
+/*		display:none;*/
+	font-family: 'Rockwell W02';
+	border: none;
+	padding: 2px;
+	font-size: 14px;
+	background-color: transparent;
+	width: 100px;
+}
+
+.side-nav-vertical .reportBug {
+	position: absolute;
+	bottom:0;
+	text-transform: none;
+	color:#ffffff;
+	padding:0 1em;
+}
+
+.side-nav-vertical .reportBug:hover {
+	color:#000000;
+}
+
+.side-nav-vertical .reportBug a,
+.side-nav-vertical .reportBug i{
+	display:inline-block;
+	border:none;
+	color: inherit;
+}
+
+.side-nav-vertical .reportBug a:hover {
+	background: none;
+}
+
+header .nav {
+	display:inline-block;
+	padding:0;
+}
+
+header .nav h1{
+  padding:0 0 0 15px;
+}
+header .nav .menu{
+	position: absolute;
+	right:20px;
+	top:15px;
+}
+header a{
+    color:#FFF;
+}
+
+.spectrum{
+  display: block;
+  background: url(/img/top-header.jpg) repeat;
+  background-size: contain;
+  width: 100%;
+  height: 4px;
+  /*position: fixed;*/
+  top: 0;
+  left: 0;
+  z-index: 101;
+}
+
+.buttons {
+	display: block;
+	max-width: 320px;
+	margin: 8px auto 0;
+	text-align: left;
+}
+
+.login .buttons{
+	text-align: center;
+}
+
+#nav {
+	background-color: #dedede;
+	margin:0 auto;
+	padding:10px 0;
+	position: fixed;
+	top:0;
+	width:100%;
+	height:42px;
+	z-index: 4;
+}
+
+#wrapper{
+	position:relative;
+	touch-action:auto;
+	
+	-webkit-user-drag: auto;
+	-moz-user-drag: auto;
+	-o-user-drag: auto;
+	user-drag: auto;
+	
+	overflow: auto;
+	
+	z-index: 0;
+	-webkit-overflow-scrolling: touch;
+}
+
+#loginForm{
+	margin: 12% auto;
+	text-align: center;
+	max-width:320px; 
+	padding: 0 20px;
+	height:auto;
+}
+
+#loginForm h1 {
+	margin:8px 0;
+}
+
+#loginForm p {
+		margin:10px 0 5px;
+}
+
+#loginForm input[type=text],
+#loginForm input[type=password]{
+	margin: 5px 0;
+	border:1px solid #BBB;
+	text-align: center;
+}
+
+#loginForm a {
+	color:#4CAF50;
+}
+
+.logo{
+	border-radius: 10px;
+	border-radius: 10px;
+	background-image: url(../../phonebook.png);
+	width: 100px;
+	height: 100px;
+	margin: 20px auto;
+}
+
+footer{
+  clear:both;
+  text-align: center;
+}
+
+
+/* ORDER */
+
+#drinkList ul li{
+	list-style-type: none;
+	display: block;
+	margin: 0;
+	width: auto;
+	float:left;
+}
+#drinkList ul{
+  padding:0;
+  margin: 0 0 15px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+#drinkList ul li.order{
+  display:inline-block;
+  width:100%;
+  border-bottom: 1px solid #efefef;
+  font-size: 1.3rem;
+  font-size: 13px;
+}
+
+#drinkList ul li.order:nth-child(even){
+  background-color: #efefef;
+}
+
+#newOrder{
+  margin: 0px auto 10px;
+  width:100%;
+  text-align: center;
+}
+
+.options{
+  width: 100%;
+  color: #FFF;
+  height: 0px;
+  -webkit-transition: all 0.1s ease;
+  -moz-transition: all 0.1s ease;
+  transition: all 0.1s ease;
+}
+
+.options .copy{
+  width: 90%;
+  text-align: left;
+  display: none;
+  padding-top: 10px;  
+  margin: 0 auto;
+}
+.options .copy p{
+  font-size: 14px;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  font-family: 'Code Pro W01 Lowercase';
+}
+.options .copy ul{
+    padding-left: 0px;
+    margin: 0;
+}
+.options .copy ul li{
+  display: inline-block;
+  list-style-image: none;
+  padding-right: 10px;
+  float:left;
+}
+
+.options .copy ul li button{
+  margin: 5px 0;
+  font-size: 11.5px !important;
+  font-size: 1.15rem !important;
+  padding: 8px 13px 6px !important;
+}
+.triangleContainer{
+  margin:0 auto;
+}
+
+.triangleBox{
+  width:45%;
+  display: inline-block;
+  margin: 0 6px;
+}
+
+.triangle-down {
+	width: 0;
+	height: 0;
+	border-left: 0px solid transparent;
+	border-right: 0px solid transparent;
+	border-top: 15px solid #CCC;
+    margin:0 auto;
+    bottom: -15px;
+  position: relative;
+    -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.orderText{
+  display: inline-block;
+  padding: 0px 0px 0px 10px;
+}
+
+.orderButton{
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+}
+.actionLinks{
+	margin:0;
+}
+
+ul.drinker li input.drinker,
+ul.other li input.other{
+	font-family: 'Rockwell W02';
+	padding: 5px;
+	margin-right: 25px;
+	width: 170px;
+}
+
+
+#listToggle{
+  display:block;
+  cursor:pointer;
+  margin: 0 auto;
+  padding:0;
+  background-color:#555;
+  font-family: 'Code Pro W01 Lowercase';
+  text-transform: uppercase;
+  color:#FFF;
+}
+
+.tab{
+  width: 75%;
+  padding: 0px;
+  display:inline-block;
+  margin:0;
+  text-align: center;
+  font-size: 12px;
+  font-size: 1.2rem;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.active{
+  background-color:#fcfcfc;
+  cursor:default;
+  width: 25%;
+}
+
+.active p,
+.active i{
+  color:#777;
+}
+
+.tab p{
+  display:inline-block;
+  padding: 0 0 0 5px;
+}
+
+.drink{
+  color:#000;
+  width: 45%;
+  border-top:1px solid #CCC;
+   border-left:1px solid #CCC;
+   border-right:1px solid #CCC;
+   border-bottom:none;
+  text-align: center;
+  display: inline-block;
+  margin:12px 6px 0;
+  border-radius: 0px;
+  cursor: pointer;
+  background-color: #eee;
+  background-image:
+    linear-gradient(
+      to bottom, 
+      #FFF, #CCC
+    );
+}
+
+#newOrder [data-drink="Other"],
+#newOrder [data-drink="Water"]{
+	 padding:0 0 15px;
+}
+/*
+.drink:before, .drink:after {
+  display: block;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  top: 0;
+  right: 0;
+  content: "";
+}
+.drink:before {
+  border-top: solid 10px #000;
+  border-right: solid 10px #000;
+  border-left: solid 10px transparent;
+  border-bottom: solid 10px transparent;
+}
+
+.drink:after {
+  
+  border-bottom: solid 10px #5b7093;
+  border-left: solid 10px #5b7093;
+  border-right: solid 10px transparent;
+  border-top: solid 10px transparent;
+
+}
+*/
+
+.drink::-moz-selection { color: none;}
+.drink::selection { color: none; }
+
+.drinkName{
+  margin: 0 0 10px;
+  font-size: 14px; 
+  font-size: 1.4rem;
+  font-weight:400;
+}
+
+.drinkOption {
+	color:#999;
+}
+
+.drinkIcon{
+  padding: 0;
+  margin: 10px 0 5px;
+}
+
+.drinkNumber{
+  font-size: 14px;
+  font-size: 1.4rem;
+  position: relative;
+  top: -10px;
+  left: 5px;font-family:'Rockwell W02';
+}
+.num{
+  display: inline-block;
+  border-radius: 10px;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+	color:#FFF;
+	font-weight:bold;
+}
+#drinkList{
+  margin: 0 0 15px 0;
+}
+
+.name-drink{
+	padding-right: 15px;
+}
+
+.fa-trash{
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 15px 15px 0;
+}
+
+ /* HEADER */
+
+header {
+  padding:0px 15px;
+}
+
+
+header .menu{
+  display:inline;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 18px;
+}
+
+header .title{
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+  line-height: 18px;
+}
+
+.kitchen .title{
+	  text-align: left !important;
+}
+
+header .title h1{
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 400;
+  padding: 4px 0 2px;
+}
+
+/* KITCHEN */
+
+.kitchen .orderHeader{
+  padding: 10px 20px;
+/*  background-color: #4c9689;*/
+  border-bottom:1px solid #d0d0d0;
+  color:#fff;
+}
+.kitchen .orderHeader p,
+.kitchen .orderHeader h2{
+  display:inline;
+}
+
+.kitchen .orderHeader p{
+  padding-left:10px
+}
+
+.kitchen h1 {
+  font-size:2.2rem;
+  font-size:22px;
+}
+
+.kitchen ul {
+  margin:0;
+  padding:0;
+}
+
+.kitchen ul li{
+  list-style: none;
+  border-bottom:1px solid #e0e0e0;
+  padding:5px 20px; 
+}
+
+.kitchen ul li:nth-child(even){
+  background-color: #efefef;
+}
+
+.kitchen ul li.message{
+	  background-color: #555;
+		color: #fff;
+}
+
+a.orderDone {
+  color: #FFF;
+  text-transform: uppercase;
+  float: right;
+  border: 1px solid #FFF;
+  position: relative;
+  top: -4px;
+  -webkit-border-radius: 11px;
+  text-align: center;
+  padding: 5px 10px 3px;
+}
+/* SIDE NAV */
+
+/* General styles for all menus */
+
+.side-nav {
+	background: #666;
+	position: fixed;
+}
+
+.side-nav h3 {
+	color: #FFF;
+    font-size: 15px;
+    font-size: 1.5em;
+	padding: 24px 15px;
+	margin: 0;
+	font-weight: 300;
+	background: #444;
+}
+
+.side-nav a {
+	display: block;
+	color: #fff;
+    font-size:12px;
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+.side-nav a:hover {
+	background: #999;
+}
+
+.side-nav a:active {
+	background: #eee;
+	color: #47a3da;
+}
+
+/* Orientation-dependent styles for the content of the menu */
+
+.side-nav-vertical {
+/*	width: 300px;*/
+    width:260px;
+	height: 100%;
+	top: 0;
+	z-index: 1000;
+}
+
+.side-nav-vertical a {
+	border-bottom: 1px solid #ccc;
+	padding: 1em;
+    font-family: 'Code Pro W01 Lowercase';
+	text-transform: uppercase;
+    font-size: 1.4rem;
+    font-size: 14px;
+}
+
+
+/* Vertical menu that slides from the left or right */
+
+.side-nav-left {
+	left: -260px;
+}
+
+.side-nav-left.side-nav-open {
+	left: 0px;
+}
+
+
+/* Push classes applied to the body */
+
+.side-nav-push {
+	overflow-x: hidden;
+	position: relative;
+	left: 0;
+}
+
+.side-nav-push-toright {
+	left: 260px;
+}
+
+
+/* Transitions */
+
+.side-nav,
+.side-nav-push {
+	-webkit-transition: all 0.1s ease;
+	-moz-transition: all 0.1s ease;
+	transition: all 0.1s ease;
+}
+
+/*SWEET ALERT*/
+
+input[type='text']{
+    font-family:'Rockwell W02';
+}
+
+.sweet-alert p{
+    font-family:'Rockwell W02';  
+}

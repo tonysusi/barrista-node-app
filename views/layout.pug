@@ -1,0 +1,33 @@
+doctype
+html
+  head
+    title Barrista - #{title}
+    meta(name="viewport", content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+    meta(name="apple-mobile-web-app-capable",content="yes")
+    link(type="text/css", rel="stylesheet",  href="http://fast.fonts.net/cssapi/4784c9d2-905d-4812-bd25-a4af0c42b0b6.css")
+    link(rel='stylesheet', href='/style.min.css')
+    meta(name="apple-mobile-web-app-status-bar-style", content="black")
+    link(rel="apple-touch-icon", sizes="57x57", href="/img/coffee_57x57.png")
+    link(rel="apple-touch-icon", sizes="72x72", href="/img/coffee_72x72.png")
+    link(rel="apple-touch-icon", sizes="114x114", href="/img/coffee_114x114.png")
+    link(rel="apple-touch-icon", sizes="144x144", href="/img/coffee_144x144.png")
+    link(href="/img/apple-touch-startup-image-320x460.png",media="(device-width: 320px)",rel="apple-touch-startup-image")
+    link(href="/img/apple-touch-startup-image-640x920.png",media="(device-width: 320px)and (-webkit-device-pixel-ratio: 2)",rel="apple-touch-startup-image")
+  body(class=slug+' '+site.env+' '+roomLink+" side-nav-push")
+    nav(class="side-nav side-nav-left side-nav-vertical" id='leftMenu')
+      block side-nav 
+    .container
+      .spectrum
+      if roomLink
+        header(class=roomLink)
+          block nav
+        .main-content(class=roomLink)
+          block content
+      else 
+        header(class="kitchen")
+          block nav 
+        .main-content(class="kitchen")
+          block content
+    footer
+      script(src="http://code.jquery.com/jquery-latest.min.js")
+      script(src='/script.min.js')
