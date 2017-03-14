@@ -1,7 +1,6 @@
-# Barrista Node App #
+# Barrista #
 
 A node.js coffee ordering app for multiple rooms.
-
 
 <!--
 ### What is this repository for? ###
